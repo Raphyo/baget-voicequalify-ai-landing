@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceQualify AI - Never Miss Another Lead</title>
+    <meta name="description" content="AI-powered voice agent that answers inbound calls and qualifies leads automatically 24/7. Never miss another potential customer again.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 32 32" class="nav-logo">
+                    <circle cx="16" cy="16" r="14" fill="#2563EB" stroke="#fff" stroke-width="2"/>
+                    <path d="M12 10h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h-2l-3 3v-3h-3c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2z" fill="#fff"/>
+                    <circle cx="14" cy="16" r="1" fill="#2563EB"/>
+                    <circle cx="18" cy="16" r="1" fill="#2563EB"/>
+                </svg>
+                <span class="brand-text">VoiceQualify AI</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
+                <a href="#demo" class="btn btn-secondary">Try Demo</a>
+            </div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-up">Never Miss Another Lead</h1>
+                <p class="hero-subtitle fade-up">Your AI voice agent answers every inbound call instantly, qualifies prospects with natural conversation, and routes hot leads to your sales team in real-time.</p>
+                <div class="hero-buttons fade-up">
+                    <a href="#demo" class="btn btn-primary btn-large">See How It Works</a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">View Pricing</a>
+                </div>
+                <div class="hero-stats fade-up">
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Always Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">< 2s</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Lead Capture Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="problem-content fade-up">
+                <h2>The Hidden Cost of Missed Calls</h2>
+                <div class="problem-stats">
+                    <div class="problem-stat">
+                        <div class="stat-circle">
+                            <span class="stat-big">60%</span>
+                        </div>
+                        <h3>Of inbound leads go unanswered</h3>
+                        <p>Because your team can't be available 24/7</p>
+                    </div>
+                    <div class="problem-stat">
+                        <div class="stat-circle">
+                            <span class="stat-big">$12K</span>
+                        </div>
+                        <h3>Average monthly revenue lost</h3>
+                        <p>From missed opportunities per business</p>
+                    </div>
+                    <div class="problem-stat">
+                        <div class="stat-circle">
+                            <span class="stat-big">78%</span>
+                        </div>
+                        <h3>Won't call back</h3>
+                        <p>Leads move on to competitors immediately</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title fade-up">How VoiceQualify AI Works</h2>
+            <div class="steps">
+                <div class="step fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Connect Your Number</h3>
+                        <p>Forward your business line to VoiceQualify AI. Setup takes just 5 minutes with our guided process.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Answers & Qualifies</h3>
+                        <p>Our natural-sounding AI agent greets callers, asks your custom qualifying questions, and scores each lead.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Hot Leads Routed Instantly</h3>
+                        <p>Qualified prospects are immediately connected to your sales team while detailed lead data flows into your CRM.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2 class="section-title fade-up">See It In Action</h2>
+            <p class="demo-subtitle fade-up">Experience how our AI handles a real qualification call</p>
+            <div class="demo-player fade-up">
+                <div class="demo-controls">
+                    <button id="playDemo" class="play-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        Play Demo Call
+                    </button>
+                </div>
+                <div class="demo-transcript" id="demoTranscript">
+                    <div class="transcript-message ai-message">
+                        <div class="message-avatar ai">AI</div>
+                        <div class="message-text">Hello! Thank you for calling ABC Solar. I'm here to help you learn about our solar solutions. May I get your name?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title fade-up">Everything You Need to Qualify Leads</h2>
+            <div class="features-grid">
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Never miss a call again. Your AI agent works around the clock, even on weekends and holidays.</p>
+                </div>
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Natural Conversation</h3>
+                    <p>Advanced AI creates human-like conversations that feel natural and build trust with your prospects.</p>
+                </div>
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19V1h-2v1H7V1H5v1H4.5C3.11 2 2 3.11 2 4.5v15C2 20.89 3.11 22 4.5 22h15c1.39 0 2.5-1.11 2.5-2.5v-15C22 3.11 20.89 2 19.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Custom Qualification</h3>
+                    <p>Configure your own qualifying questions and criteria to match your specific business needs.</p>
+                </div>
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                        </svg>
+                    </div>
+                    <h3>CRM Integration</h3>
+                    <p>Seamlessly sync qualified leads with Salesforce, HubSpot, Pipedrive, and 50+ other platforms.</p>
+                </div>
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                        </svg>
+                    </div>
+                    <h3>Real-time Scoring</h3>
+                    <p>Get instant lead quality scores based on qualification responses and priority routing.</p>
+                </div>
+                <div class="feature fade-up">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <h3>Call Recordings</h3>
+                    <p>Full call recordings and transcripts for quality assurance and training your sales team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title fade-up">Simple, Transparent Pricing</h2>
+            <p class="pricing-subtitle fade-up">Choose the plan that fits your call volume. No setup fees, cancel anytime.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-up">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">149</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for small businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>200 calls per month</li>
+                            <li>Basic qualification questions</li>
+                            <li>Email notifications</li>
+                            <li>CRM integration</li>
+                            <li>Call recordings</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-secondary btn-full" data-plan="starter">Start Free Trial</button>
+                </div>
+                <div class="pricing-card pricing-card-featured fade-up">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Growth</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">349</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For growing sales teams</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>1,000 calls per month</li>
+                            <li>Custom qualification flows</li>
+                            <li>Real-time lead routing</li>
+                            <li>Advanced CRM integration</li>
+                            <li>Analytics dashboard</li>
+                            <li>Priority support</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary btn-full" data-plan="growth">Start Free Trial</button>
+                </div>
+                <div class="pricing-card fade-up">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">799</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For high-volume businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li>Unlimited calls</li>
+                            <li>Advanced AI training</li>
+                            <li>Multi-location support</li>
+                            <li>Custom integrations</li>
+                            <li>Dedicated account manager</li>
+                            <li>White-label options</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-secondary btn-full" data-plan="enterprise">Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-up">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-up">
+                    <div class="testimonial-content">
+                        <p>"VoiceQualify AI has transformed our lead qualification process. We went from missing 40% of calls to capturing every single lead. Our sales team now focuses only on hot prospects."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Sarah Mitchell</div>
+                            <div class="author-title">CEO, GreenTech Solutions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial fade-up">
+                    <div class="testimonial-content">
+                        <p>"The AI sounds so natural that most callers don't even realize they're talking to a bot. It's increased our lead quality by 60% and our sales team couldn't be happier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Marcus Rodriguez</div>
+                            <div class="author-title">Sales Director, Elite Realty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial fade-up">
+                    <div class="testimonial-content">
+                        <p>"ROI was immediate. In our first month, we captured $85K in additional revenue from leads we would have missed. VoiceQualify AI pays for itself many times over."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Jennifer Chen</div>
+                            <div class="author-title">Founder, Apex Insurance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title fade-up">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>How quickly can I set up VoiceQualify AI?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Setup takes just 5-10 minutes. Simply forward your business line to your VoiceQualify AI number, configure your qualification questions, and you're ready to go. Our team provides guided onboarding to ensure everything works perfectly.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>How natural does the AI voice sound?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI uses the latest voice synthesis technology to create incredibly natural-sounding conversations. Most callers can't tell they're speaking with an AI. The voice is warm, professional, and adapts to different conversation contexts.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Can I customize the qualification questions?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can create custom qualification flows tailored to your business needs. Set up different question paths, scoring criteria, and routing rules. Our AI learns from your feedback to continuously improve qualification accuracy.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Which CRMs do you integrate with?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We integrate with 50+ CRM platforms including Salesforce, HubSpot, Pipedrive, Zoho, and many others. Lead data flows automatically into your existing system with full contact details, qualification scores, and call recordings.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>What happens if the AI can't handle a call?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI is designed to handle 95% of qualification calls successfully. In rare cases where the AI encounters an unusual situation, it can seamlessly transfer the call to your team with context about the conversation so far.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <div class="faq-question">
+                        <h3>Is there a free trial?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 14-day free trial with no credit card required. You'll get access to all features and can test the AI with real calls to see the quality for yourself. Cancel anytime during the trial with no charges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <svg width="32" height="32" viewBox="0 0 32 32" class="footer-logo">
+                        <circle cx="16" cy="16" r="14" fill="#2563EB" stroke="#fff" stroke-width="2"/>
+                        <path d="M12 10h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2h-2l-3 3v-3h-3c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2z" fill="#fff"/>
+                        <circle cx="14" cy="16" r="1" fill="#2563EB"/>
+                        <circle cx="18" cy="16" r="1" fill="#2563EB"/>
+                    </svg>
+                    <span class="footer-brand-text">VoiceQualify AI</span>
+                </div>
+                <div class="footer-info">
+                    <p>Never miss another lead with AI-powered voice qualification</p>
+                    <p class="footer-contact">
+                        Questions? Email us at <a href="mailto:hello@voicequalify.ai">hello@voicequalify.ai</a>
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="mailto:hello@voicequalify.ai">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VoiceQualify AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
